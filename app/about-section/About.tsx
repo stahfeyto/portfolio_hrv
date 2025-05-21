@@ -25,32 +25,25 @@ const About = () => {
           <div className="mb-10 flex w-[100%] flex-col gap-4 text-[18px] font-medium  leading-relaxed tracking-wide text-[#e4ded7] md:mb-16 md:gap-6 md:text-[20px] md:leading-relaxed lg:mb-16  lg:max-w-[90%] lg:text-[24px] ">
             <AnimatedBody
               text={
-                "I specialize in crafting high-converting landing pages and websites for SaaS, Web3 & AI startups. I'm passionate about building software that makes a difference."
+                "I have a strong passion for frontend development and design, as I believe in the power of captivating people through beautiful, dynamic, and engaging digital experiences. I love creating interfaces that stand out and leave a lasting impression."
               }
             />
             <AnimatedBody
               text={
-                "Whether I’m designing a sleek user interface or coding a complex application, I’m always striving to create something unique and innovative. I love experimenting with new technologies and staying up-to-date with the latest trends in the tech world."
-              }
-              className={"hidden"}
-            />
-            <AnimatedBody
-              text={
-                "Beyond my work as a frontend developer, I'm an active leader in tech communities on campus. As a member of the Google Developer Student Clubs and Microsoft Learn Student Ambassadors, I've led workshops and mentored other students."
+                "Beyond my work as a frontend developer, I dream of becoming a great project manager one day, with the goal of inspiring others to push beyond their limits and believe in their own potential."
               }
             />
             <AnimatedBody
               text={
-                "When I'm not coding, you can find me binge-watching anime, hanging out with friends, cheering on Manchester United, or discovering new music in my favorite genres like RnB, UK Drill, and Chill Rap."
+                "In my free time, you’ll often find me playing video games or basketball, spending quality time with friends and family, cheering for FC Porto and Lazio, or discovering new music in my favorite genres: R&B, modern jazz, blues, reggae, and dancehall."
               }
             />
             <AnimatedBody
               text={
-                "I'm currently working on some exciting projects that I can't wait to share with you. But I’m always open to new opportunities and collaborations."
+                "Right now, I'm working on some exciting projects that I can't wait to share. I'm always open to new opportunities and collaborations that challenge me and help me grow."
               }
             />
           </div>
-
           <div className="mb-24 flex w-[100%] flex-col gap-4 text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[16px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
             <div className="flex flex-col gap-4 md:gap-3">
               <AnimatedTitle
@@ -63,7 +56,22 @@ const About = () => {
               />
               <AnimatedBody
                 text={
-                  "JavaScript (ES6+), React, Next.js, TypeScript, Prismic CMS, Redux, Redux Toolkit, React Testing Library, Vitetest, HTML5, Git/GitHub, NextAuth, Formik."
+                  "JavaScript , React, Next.js, TypeScript, Redux, Redux Toolkit, Zustand, Vitetest, HTML, CSS, SCSS, SASS, Git/GitHub."
+                }
+              />
+            </div>
+            <div className="flex flex-col gap-4 md:gap-3">
+              <AnimatedTitle
+                text={"Backend Tools"}
+                className={
+                  "text-[24px] text-[#e4ded7] md:text-[30px] lg:text-[20px]"
+                }
+                wordSpace={"mr-[0.25em]"}
+                charSpace={"mr-[0.01em]"}
+              />
+              <AnimatedBody
+                text={
+                  "Python, Node.js, MySQL."
                 }
               />
             </div>
@@ -78,7 +86,7 @@ const About = () => {
               />
               <AnimatedBody
                 text={
-                  "CSS3/SCSS/SASS, Tailwind CSS, Material UI, Framer Motion, GSAP, Bootstrap, Chart.js."
+                  "Tailwind CSS, Bootstrap, Chart.js, ECharts."
                 }
               />
             </div>
@@ -93,7 +101,7 @@ const About = () => {
               />
               <AnimatedBody
                 text={
-                  "Figma, Framer, FigJam, Adobe XD, ProtoPie, Adobe Photoshop, UX Research, UI Design, Prototyping."
+                  "Figma."
                 }
               />
             </div>

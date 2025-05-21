@@ -11,11 +11,11 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Victor Williams — Frontend Engineer",
+  title: "Helder Valente — Frontend Engineer",
   description:
-    "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+    "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences.",
   generator: "Next.js",
-  applicationName: "Victor Williams",
+  applicationName: "Helder Valente",
   keywords: [
     "freelance",
     "developer",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   ],
   colorScheme: "dark",
   openGraph: {
-    title: "Victor Williams — Frontend Engineer",
+    title: "Helder Valente — Frontend Engineer",
     description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences.",
     url: "https://www.victorwilliams.me/",
     siteName: "www.victorwilliams.me",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
         width: 1200,
         height: 630,
-        alt: "Victor Williams — Frontend Engineer",
+        alt: "Helder Valente — Frontend Engineer",
       },
     ],
     locale: "en-US",
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Victor Williams — Frontend Engineer",
+    title: "Helder Valente — Frontend Engineer",
     description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences.",
     creator: "victorwill__",
     creatorId: "1243720976552144897",
     images: [
