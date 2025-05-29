@@ -38,7 +38,7 @@ const ProjectCard = ({
         alt={name}
         className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
           id % 2 === 0 ? "right-0" : "left-0"
-        }`}
+        } rounded-3xl`} // <--- AQUI ESTÁ A ALTERAÇÃO: Adicionado 'rounded-3xl'
       />
       <div
         className={`absolute top-0 text-[#0E1016] ${

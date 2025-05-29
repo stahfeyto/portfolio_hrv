@@ -20,7 +20,7 @@ export const devProjects = [
     technologies: ["React", "Tailwind CSS", "Echarts"],
     github: "https://github.com/stahfeyto",
     demo: "https://www.odunsi.xyz/",
-    image: require(".//../../public/projects/rstart.png"),
+    image: require(".//../../public/projects/osbvt.png"),
     className: "rounded-t-3xl -mt-4 w-full",
     available: true,
   },
