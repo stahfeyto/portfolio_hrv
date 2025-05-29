@@ -46,7 +46,7 @@ export const songs: SongProps[] = [
   {
     title: "Care",
     artist: "Sonder",
-    image: require("../../public/songs/redux.avif"),
+    image: require("../../public/songs/redux.png"),
     link: "https://open.spotify.com/track/3tkxfORwPo2zydAf25YFOc",
   },
   {
