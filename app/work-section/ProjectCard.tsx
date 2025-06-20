@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons"; // Importe o ícone de download
 import { ProjectProps } from "./projectDetails";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,7 +10,7 @@ import AnimatedBody from "../animations/AnimatedBody";
 import { motion } from "framer-motion";
 
 const ProjectCard = ({
-  id,
+  id, // Certifique-se de que o ID está a ser desestruturado
   name,
   description,
   technologies,
@@ -29,7 +30,7 @@ const ProjectCard = ({
           position: "relative",
         } as React.CSSProperties
       }
-      className={`relative z-10 h-[550px]  w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
+      className={`relative z-10 h-[550px] w-full items-stretch justify-center overflow-hidden rounded-3xl bg-center py-0 sm:h-[700px] sm:w-[100%] md:h-[650px] md:w-[100%] lg:h-[500px]`}
       initial="initial"
       animate="animate"
     >
@@ -38,12 +39,12 @@ const ProjectCard = ({
         alt={name}
         className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
           id % 2 === 0 ? "right-0" : "left-0"
-        } rounded-3xl`} // <--- AQUI ESTÁ A ALTERAÇÃO: Adicionado 'rounded-3xl'
+        } rounded-3xl`}
       />
       <div
         className={`absolute top-0 text-[#0E1016] ${
           id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
-        } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
+        } mt-6 flex items-center justify-center gap-4 lg:mt-10`}
       >
         {available ? (
           <>
@@ -63,17 +64,34 @@ const ProjectCard = ({
                 data-blobity-magnetic="true"
               />
             </Link>
-            <Link href={demo} target="_blank" aria-label="Open Live Demo">
-              <FontAwesomeIcon
-                icon={faLink}
-                className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
-                data-blobity
-                data-blobity-radius="38"
-                data-blobity-offset-x="4"
-                data-blobity-offset-y="4"
-                data-blobity-magnetic="trues"
-              />
-            </Link>
+
+            {/* Lógica para exibir o ícone de download ou link */}
+            {id === 0 ? ( // Se o ID for 0 (Internship Report)
+              <Link href={demo} target="_blank" aria-label="Download Report">
+                <FontAwesomeIcon
+                  icon={faDownload} // Use o ícone de download
+                  className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
+                  data-blobity
+                  data-blobity-radius="38"
+                  data-blobity-offset-x="4"
+                  data-blobity-offset-y="4"
+                  data-blobity-magnetic="true"
+                />
+              </Link>
+            ) : (
+              // Para outros projetos, mantenha o ícone de link
+              <Link href={demo} target="_blank" aria-label="Open Live Demo">
+                <FontAwesomeIcon
+                  icon={faLink}
+                  className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
+                  data-blobity
+                  data-blobity-radius="38"
+                  data-blobity-offset-x="4"
+                  data-blobity-offset-y="4"
+                  data-blobity-magnetic="trues"
+                />
+              </Link>
+            )}
           </>
         ) : (
           <div className=" flex items-center justify-center gap-4">
@@ -85,7 +103,7 @@ const ProjectCard = ({
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className=" w-[20px]  rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
+                className=" w-[20px] rounded-full bg-white p-5 text-[20px] md:w-[25px] md:text-[24px] lg:w-[30px] lg:text-[28px]"
                 data-blobity
                 data-blobity-radius="38"
                 data-blobity-offset-x="4"
@@ -102,11 +120,11 @@ const ProjectCard = ({
         )}
       </div>
       <div
-        className={`absolute text-white  ${
+        className={`absolute text-white ${
           !(id % 2 === 0)
-            ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-60  lg:mr-4"
+            ? "right-0 top-32 mr-0 ml-10 md:right-0 md:ml-0 lg:right-0 lg:top-60 lg:mr-4"
             : "left-10 top-32 ml-0 md:mr-12 lg:top-52 lg:ml-4"
-        } mb-10  md:mb-16 lg:mb-14 `}
+        } mb-10 md:mb-16 lg:mb-14 `}
       >
         <AnimatedTitle
           text={name}

@@ -19,7 +19,7 @@ export const devProjects = [
       "Internship project focused on a Financial Dashboard, aimed at helping companies better understand their numbers. This document presents the internship report.",
     technologies: ["React", "Tailwind CSS", "Echarts"],
     github: "https://github.com/stahfeyto",
-    demo: "https://www.odunsi.xyz/",
+    demo: "https://drive.google.com/file/d/1plpzMYtFCSSqDmqx74fSqo684P8ZhJxI/view?usp=sharing",
     image: require(".//../../public/projects/osbvt.png"),
     className: "rounded-t-3xl -mt-4 w-full",
     available: true,
